@@ -5,8 +5,10 @@ while (true) {
         light.clear()
     } else if (input.lightLevel() <= 6) {
         //  if light level is greater than 2, then dim neopixels red
-        light.setBrightness(75)
+        light.setBrightness(15)
         light.setAll(color.rgb(255, 0, 0))
+    } else {
+        light.setAll(color.rgb(255, 69, 0))
     }
     
 }

@@ -5,5 +5,7 @@ while True:
         light.clear()
     elif input.light_level() <= 6:
         # if light level is greater than 2, then dim neopixels red
-        light.set_brightness(75)
+        light.set_brightness(15)
         light.set_all(color.rgb(255, 0, 0))
+    else:
+        light.set_all(color.rgb(255,69,0))
